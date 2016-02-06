@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <base href="/">
+    <!-- /meta -->
+
+    <title>Exemplo de App</title>
+
+    <!-- frameworks -->
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="bower_components/font-awesome/css/font-awesome.min.css"/>
+    <!-- plugins frameworks -->
+    <!-- theme -->
+    <link rel="stylesheet" type="text/css" href="bower_components/AdminLTE/dist/css/AdminLTE.min.css"/>
+    <link rel="stylesheet" type="text/css" href="bower_components/AdminLTE/dist/css/skins/skin-blue.min.css"/>
+    <!-- css sigpharma -->
+    <link rel="stylesheet" href="client/css/normalize.css"/>
+    <!-- da pagina -->
+  </head>
+  <body class="skin-blue fixed" ng-controller="MainController" id="MainController">
+    <div class="wrapper">
+      <header class="main-header">
+        <a href="javaScript:;" class="logo">
+          <!-- LOGO -->
+          SIGPharma
+        </a>
+        <nav class="navbar navbar-static-top">
+          <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+            <span class="sr-only">Toggle navigation</span>
+          </a>
+
+          <div class="navbar-custom-menu">
+            <ul class="nav navbar-nav">
+              <li>
+                <a href="http://sigpharma.com.br">SigPharma</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+      <aside class="main-sidebar">
+        <div class="sidebar">
+          <ul class="nav sidebar-menu">
+            <li>
+              <a href="#item-01">
+                <i class="fa fa-circle-o"></i>
+                Item 01
+              </a>
+            </li>
+            <li>
+              <a href="#item-02">
+                <i class="fa fa-circle-o"></i>
+                Item 02
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <div class="content-wrapper">
+        <section class="content-header">
+          <h1>App de Exemplo</h1>
+
+          <!-- container onde ira enxertar as paginas -->
+        </section>
+        <section class="content" ng-view></section>
+      </div>
+    </div>
+
+
+
+    <!-- frameworks -->
+    <!-- <script src="bower_components/jquery/dist/jquery.min.js" charset="utf-8"></script>
+    <!-- <script src="bower_components/bootstrap/dist/js/bootstrap.min.js" charset="utf-8"></script>
+    <script src="bower_components/angular/angular.min.js" charset="utf-8"></script>
+    <!-- plugins frameworks -->
+    <!-- <script src="bower_components/angular-locale_pt-br.js"></script> -->
+    <!-- <script src="bower_components/angular-route/angular-route.min.js" charset="utf-8"></script>
+    <!-- <script src="bower_components/AdminLTE/dist/js/app.min.js"></script>-->
+    <script src="bower_components/requirejs/require.js" data-main="require.main.js" charset="utf-8"></script>
+
+  </body>
+</html>
